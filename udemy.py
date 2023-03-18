@@ -58,7 +58,7 @@ def scatter(x,y):
    
 menu = ["Home", "EDA", "prediction"]
 choice = st.sidebar.selectbox("Menu", menu)
-limit=st.sidebar.slider('How old are you?', 2011, 2016, 2017 )
+limit=st.sidebar.slider('select year', 2011, 2016, 2017 )
 if limit:
   data=data[data["year"]==limit]
 else:
