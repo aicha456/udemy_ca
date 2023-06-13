@@ -14,7 +14,7 @@ ReverseTwitterScraper==0.4
 python-math== 0.0.1
 scikit-learn==1.2.1
 neattext== 0.1.3
-joblib==1.0.1
+joblib==1.1.1
 matplotlib==3.3.4
 
 
