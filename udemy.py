@@ -12,7 +12,7 @@ import streamlit as st
 import altair as alt
 import plotly.express as px
 
-data=pd.read_csv("/Users/macos/github/udemy_ca/udemy_stre/udemy_courses-raw.csv",parse_dates=True,index_col=["published_timestamp"])
+data=pd.read_csv("udemy_courses-raw.csv",parse_dates=True,index_col=["published_timestamp"])
 data["year"] = data.index.year
 def serch_by_word(title):
         course=[]
