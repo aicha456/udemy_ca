@@ -12,7 +12,7 @@ import streamlit as st
 import altair as alt
 import plotly.express as px
 
-data=pd.read_csv("udemy_courses-raw.csv",parse_dates=True,index_col=["published_timestamp"])
+data=pd.read_csv("/Users/macos/Desktop/stre/udemy_courses-raw.csv",parse_dates=True,index_col=["published_timestamp"])
 data["year"] = data.index.year
 def serch_by_word(title):
         course=[]
@@ -58,7 +58,7 @@ def scatter(x,y):
    
 menu = ["Home", "EDA", "prediction"]
 choice = st.sidebar.selectbox("Menu", menu)
-limit=st.sidebar.slider('select year', 2011, 2016, 2017 )
+limit=st.sidebar.slider('How old are you?', 2011, 2016, 2017 )
 if limit:
   data=data[data["year"]==limit]
 else:
